@@ -22,6 +22,8 @@ gem 'jwt'
 # seriaization & json_api logic
 gem 'jsonapi.rb'
 
+# logs all changes to your models
+gem "audited", "~> 4.9"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

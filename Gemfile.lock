@@ -60,6 +60,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    audited (4.10.0)
+      activerecord (>= 4.2, < 6.2)
     bcrypt (3.1.16)
     bootsnap (1.7.0)
       msgpack (~> 1.0)
@@ -92,7 +94,9 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.3)
@@ -179,6 +183,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  audited (~> 4.9)
   bcrypt
   bootsnap (>= 1.4.4)
   byebug
